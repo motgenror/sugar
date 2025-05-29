@@ -1,5 +1,5 @@
 [package]
-name = "motgenror-sugar"
+name = "motgenror_sugar"
 version = "0.1.0"
 edition = "2024"
 
