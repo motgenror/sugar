@@ -22,6 +22,18 @@ macro_rules! or {
 }
 pub use or;
 
+#[macro_export]
+macro_rules! bitor {
+    ($expr:expr;) => {
+        $expr
+    };
+
+    ($first:expr; $($rest:expr;)+) => {
+        $first $(| $rest)+
+    };
+}
+pub use bitor;
+
 pub trait Kotlin: Sized {
     fn ket<F, R>(self, f: F) -> R
     where
