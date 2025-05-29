@@ -8,7 +8,6 @@ macro_rules! and {
         $first $(&& $rest)+
     };
 }
-pub use and;
 
 #[macro_export]
 macro_rules! or {
@@ -20,7 +19,6 @@ macro_rules! or {
         $first $(|| $rest)+
     };
 }
-pub use or;
 
 #[macro_export]
 macro_rules! bitor {
@@ -32,7 +30,6 @@ macro_rules! bitor {
         $first $(| $rest)+
     };
 }
-pub use bitor;
 
 pub trait Kotlin: Sized {
     fn ket<F, R>(self, f: F) -> R
